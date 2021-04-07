@@ -33,6 +33,7 @@
     <![endif]-->
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+    <div id="root"></div>
 <!-- Navigation
     ==========================================-->
 <nav id="menu" class="navbar navbar-default navbar-fixed-top">
@@ -377,5 +378,12 @@
 <script type="text/javascript" src="js/contact_me.js"></script> 
 <script type="text/javascript" src="js/main.js"></script>
 <script type="text/javascript" src="js/webchat.botonic.js"></script>
+<script>
+    type =
+      'text/javascript' >
+      document.addEventListener('DOMContentLoaded', function (event) {
+        Botonic.render(document.getElementById('root'))
+      })
+  </script>
 </body>
 </html>
