@@ -4,12 +4,13 @@
         let urlParams = new URLSearchParams(window.location.search);
     let myParam = urlParams.get('status');
     if(myParam === "PROCESSED"){
-        myParam = "PROCESSED";
+        window.location.href="https://fcbiz.page.link/?link=https://merchant.freecharge.in?status=PROCESSED&apn=com.freecharge.business&isi=1447794906&ibi=com.freecharge.business"
     }
     else{
-        myParam = "REJECTED";
+        window.location.href="https://fcbiz.page.link/?link=https://merchant.freecharge.in?status=REJECTED&apn=com.freecharge.business&isi=1447794906&ibi=com.freecharge.business"
+        
     }
-    window.location.href="https://fcbiz.page.link/?link=https://merchant.freecharge.in?status="+myParam+"&apn=com.freecharge.business&isi=1447794906&ibi=com.freecharge.business"
+    
     </script>
 
 </htm>
