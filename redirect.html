@@ -1,8 +1,8 @@
 <htm>
 
     <script>
-        const urlParams = new URLSearchParams(window.location.search);
-    const myParam = urlParams.get('status');
+        let urlParams = new URLSearchParams(window.location.search);
+    let myParam = urlParams.get('status');
     if(myParam === "PROCESSED"){
         myParam = "PROCESSED";
     }
