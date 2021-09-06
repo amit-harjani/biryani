@@ -1,14 +1,14 @@
 <htm>
 
     <script>
-    let url = "";
+    let url = "https://merchant.freecharge.in";
     let urlParams = new URLSearchParams(window.location.search);
     let myParam = urlParams.get('status');
     if(myParam === "PROCESSED"){
         url = "https://fcbiz.page.link/?link=https://merchant.freecharge.in?status=PROCESSED&apn=com.freecharge.business&isi=1447794906&ibi=com.freecharge.business"
         window.location.href=url;
     }
-    else{
+    else if (myParam==="REJECTED"){
         url="https://fcbiz.page.link/?link=https://merchant.freecharge.in?status=REJECTED&apn=com.freecharge.business&isi=1447794906&ibi=com.freecharge.business";
         window.location.href=url;
         
